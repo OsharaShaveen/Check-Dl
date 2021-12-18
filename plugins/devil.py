@@ -3,8 +3,8 @@ import random, re
 import asyncio
 from telethon import events
 
-@borg.on(pattern="devil ?(.*)"))
-async def _(event):
+@bot.message_handler(commands=["devil"])
+def send_message(message):
      if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
         await event.edit("😒You Know I'm a good **PERSON**😏")
         await asyncio.sleep(1.9)
