@@ -1,9 +1,9 @@
 import random, re
-from uniborg.util import admin_cmd
+
 import asyncio
 from telethon import events
 
-@borg.on(admin_cmd(pattern="devil ?(.*)"))
+@borg.on(pattern="devil ?(.*)"))
 async def _(event):
      if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
         await event.edit("😒You Know I'm a good **PERSON**😏")
