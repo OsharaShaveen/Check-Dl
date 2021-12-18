@@ -20,7 +20,7 @@ async def _(event):
         await asyncio.sleep(2.1)
         await event.edit("**👿🇱🇰 Im WhiteDevil's YT Song Downloader Bot 😂🇱🇰**")
         await asyncio.sleep(1.3)
-        await event edit("**Lol😂 Im Only Bot 😂 I Dont Talk With You 😂**")
+        await event.edit("**Lol😂 Im Only Bot 😂 I Dont Talk With You 😂**")
 
 
 
